@@ -35,7 +35,7 @@ import java.util.Arrays;
 import java.util.List;
 
 @SearchIndexable
-public class AwakenSettings extends SettingsPreferenceFragment { 
+public class AwakenSettings extends SettingsPreferenceFragment {
 
     private static final String KEY_AMBIENT_DISPLAY_CUSTOM = "ambient_display_custom";
 
