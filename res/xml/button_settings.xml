@@ -55,6 +55,10 @@
         android:defaultValue="false"
         settings:controller="com.awaken.settings.VolumePanelOnLeftPreferenceController"/>
 
+    <SwitchPreference
+        android:key="navbar_visibility"
+        android:title="@string/navbar_visibility" />
+
     <com.dirtyunicorns.support.preferences.SecureSettingListPreference
         android:key="navbar_layout_views"
         android:title="@string/navbar_layout_title"

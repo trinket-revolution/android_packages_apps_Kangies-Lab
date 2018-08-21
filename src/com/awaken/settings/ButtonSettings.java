@@ -20,6 +20,7 @@ import android.content.ContentResolver;
 import android.content.Context;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.os.Handler;
 import android.os.UserHandle;
 import android.provider.Settings;
 import android.provider.SearchIndexableResource;
@@ -63,6 +64,7 @@ public class ButtonSettings extends ActionFragment implements
     private static final String HWKEY_DISABLE = "hardware_keys_disable";
     private static final String LAYOUT_SETTINGS = "navbar_layout_views";
     private static final String NAVIGATION_BAR_INVERSE = "navbar_inverse_layout";
+    private static final String NAVBAR_VISIBILITY = "navbar_visibility";
 
     // category keys
     private static final String CATEGORY_HWKEY = "hardware_keys";
@@ -90,6 +92,10 @@ public class ButtonSettings extends ActionFragment implements
     private SwitchPreference mHwKeyDisable;
     private Preference mLayoutSettings;
     private SwitchPreference mSwapNavButtons;
+    private SwitchPreference mNavbarVisibility;
+
+    private boolean mIsNavSwitchingMode = false;
+    private Handler mHandler;
 
     private static final String TORCH_POWER_BUTTON_GESTURE = "torch_power_button_gesture";
 
@@ -224,8 +230,21 @@ public class ButtonSettings extends ActionFragment implements
         if (!Utils.isThemeEnabled("com.android.internal.systemui.navbar.threebutton")) {
             prefScreen.removePreference(mLayoutSettings);
         }
+        mNavbarVisibility = (SwitchPreference) findPreference(NAVBAR_VISIBILITY);
 
+        boolean showing = Settings.System.getInt(getContentResolver(),
+                Settings.System.FORCE_SHOW_NAVBAR,
+                ActionUtils.hasNavbarByDefault(getActivity()) ? 1 : 0) != 0;
+        updateBarVisibleAndUpdatePrefs(showing);
+        mNavbarVisibility.setOnPreferenceChangeListener(this);
+
+        mHandler = new Handler();
     }
+
+    private void updateBarVisibleAndUpdatePrefs(boolean showing) {
+        mNavbarVisibility.setChecked(showing);
+    }
+
     private ListPreference initActionList(String key, int value) {
         ListPreference list = (ListPreference) getPreferenceScreen().findPreference(key);
         list.setValue(Integer.toString(value));
@@ -288,8 +307,24 @@ public class ButtonSettings extends ActionFragment implements
                     Toast.LENGTH_SHORT).show();
             }
             return true;
+        } else if (preference.equals(mNavbarVisibility)) {
+            if (mIsNavSwitchingMode) {
+                return false;
+            }
+            mIsNavSwitchingMode = true;
+            boolean showing = ((Boolean)objValue);
+            Settings.System.putInt(getContentResolver(), Settings.System.FORCE_SHOW_NAVBAR,
+                    showing ? 1 : 0);
+            updateBarVisibleAndUpdatePrefs(showing);
+            mHandler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    mIsNavSwitchingMode = false;
+                }
+            }, 1500);
+            return true;
         }
-            return false;
+        return false;
     }
 
     @Override
