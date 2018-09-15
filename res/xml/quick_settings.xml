@@ -70,6 +70,12 @@
         android:entryValues="@array/smart_pulldown_values"
         android:persistent="false" />
 
+    <Preference
+         android:key="carrierlabel_settings"
+         android:title="@string/carrier_label_category_title"
+         android:summary="@string/carrier_label_category_summary"
+         android:fragment="com.kangos.settings.CarrierLabelSettings" />
+
     <com.dirtyunicorns.support.preferences.SystemSettingSwitchPreference 
         android:key="qs_running_services_toggle" 
         android:title="@string/qs_running_services_title" 
