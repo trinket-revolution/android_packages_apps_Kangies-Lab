@@ -44,6 +44,8 @@ import com.android.internal.logging.nano.MetricsProto;
 import com.android.internal.util.hwkeys.ActionConstants;
 import com.android.internal.util.hwkeys.ActionUtils;
 
+import com.android.internal.util.du.Utils;
+
 import com.awaken.settings.preference.ActionFragment;
 
 import java.util.ArrayList;
@@ -59,6 +61,8 @@ public class ButtonSettings extends ActionFragment implements
     private static final String KEY_BUTTON_BRIGHTNESS_SW = "button_brightness_sw";
     private static final String KEY_BACKLIGHT_TIMEOUT = "backlight_timeout";
     private static final String HWKEY_DISABLE = "hardware_keys_disable";
+    private static final String LAYOUT_SETTINGS = "navbar_layout_views";
+    private static final String NAVIGATION_BAR_INVERSE = "navbar_inverse_layout";
 
     // category keys
     private static final String CATEGORY_HWKEY = "hardware_keys";
@@ -84,6 +88,8 @@ public class ButtonSettings extends ActionFragment implements
     private CustomSeekBarPreference mButtonBrightness;
     private SwitchPreference mButtonBrightness_sw;
     private SwitchPreference mHwKeyDisable;
+    private Preference mLayoutSettings;
+    private SwitchPreference mSwapNavButtons;
 
     private static final String TORCH_POWER_BUTTON_GESTURE = "torch_power_button_gesture";
 
@@ -211,6 +217,14 @@ public class ButtonSettings extends ActionFragment implements
         mTorchPowerButton.setValue(Integer.toString(mTorchPowerButtonValue));
         mTorchPowerButton.setSummary(mTorchPowerButton.getEntry());
         mTorchPowerButton.setOnPreferenceChangeListener(this);
+
+        mLayoutSettings = (Preference) findPreference(LAYOUT_SETTINGS);
+        mSwapNavButtons = (SwitchPreference) findPreference(NAVIGATION_BAR_INVERSE);
+
+        if (!Utils.isThemeEnabled("com.android.internal.systemui.navbar.threebutton")) {
+            prefScreen.removePreference(mLayoutSettings);
+        }
+
     }
     private ListPreference initActionList(String key, int value) {
         ListPreference list = (ListPreference) getPreferenceScreen().findPreference(key);

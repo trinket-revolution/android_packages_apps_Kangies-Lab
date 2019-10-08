@@ -55,19 +55,18 @@
         android:defaultValue="false"
         settings:controller="com.awaken.settings.VolumePanelOnLeftPreferenceController"/>
 
-        <Preference
-            android:key="nav_bar_tuner"
-            android:title="@string/nav_bar_tuner_title"
-            android:summary="@string/nav_bar_tuner_summary">
-            <intent android:action="android.intent.action.MAIN"
-                android:targetPackage="com.android.systemui"
-                android:targetClass="com.android.systemui.tuner.NavBarActivity" />
-        </Preference>
+    <com.dirtyunicorns.support.preferences.SecureSettingListPreference
+        android:key="navbar_layout_views"
+        android:title="@string/navbar_layout_title"
+        android:summary="%s"
+        android:entries="@array/navbar_layout_entries"
+        android:entryValues="@array/navbar_layout_values"
+        android:defaultValue="default" />
 
     <com.dirtyunicorns.support.preferences.SecureSettingSwitchPreference
-        android:key="sysui_nav_bar_inverse"
+        android:key="navbar_inverse_layout"
         android:title="@string/navbar_invert_layout_title"
-        android:defaultValue="true" />
+        android:defaultValue="false" />
 
     <com.dirtyunicorns.support.preferences.SystemSettingSwitchPreference
         android:key="pixel_nav_animation"

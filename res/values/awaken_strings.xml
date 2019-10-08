@@ -273,12 +273,6 @@
     <!-- Navbar options -->
     <string name="navbar_invert_layout_title">Invert layout</string>
 
-    <!-- Navbar options -->
-    <string name="nav_bar_tuner_title">Navigation bar tuner</string>
-    <string name="nav_bar_tuner_summary">Change navbar layout</string>
-    <string name="navigation_bar_title">Navigation bar</string>
-    <string name="system_navigation_summary">Choose which system navigation style to use</string>
-
     <!-- Center R Notification headers -->
     <string name="center_notification_headers_title">Center notification headers</string>
     <string name="center_notification_headers_summary">Whether to Center R style notification headers (Requires a SystemUI restart)</string>

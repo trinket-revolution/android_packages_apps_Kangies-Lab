@@ -586,4 +586,9 @@
     <string name="qs_show_drag_handle_title">Drag handle</string>
     <string name="qs_show_drag_handle_summary">Show drag handle below the quick settings panel</string>
 
+    <string name="navbar_layout_title">Layout</string>
+    <string name="navbar_layout_normal">Normal</string>
+    <string name="navbar_layout_compact">Compact</string>
+    <string name="navbar_layout_leftleaning">Left-leaning</string>
+    <string name="navbar_layout_rightleaning">Right-leaning</string>
 </resources>
