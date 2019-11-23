@@ -16,6 +16,19 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/miscellaneous_title" >
 
+    <!-- Rounded Corners -->
+    <PreferenceCategory 
+         android:key="rounded_corners_category"
+         android:title="@string/corners_category_title">
+
+        <PreferenceScreen
+            android:key="rounded_corners"
+            android:title="@string/corners_title"
+            android:summary="@string/corners_category_summary"
+            android:fragment="com.awaken.settings.RoundedCorners" />
+
+    </PreferenceCategory>
+
     <com.dirtyunicorns.support.preferences.GlobalSettingSwitchPreference
         android:key="allow_signature_fake"
         android:title="@string/allow_signature_fake"
