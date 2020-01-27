@@ -55,6 +55,18 @@
                 settings:units="dp"/>
         </PreferenceCategory>
 
+    <!-- FOD customization options -->
+    <PreferenceCategory
+        android:key="fod_icon_picker"
+        android:title="@string/fod_icon_picker_category_title">
+
+        <!-- FOD recognizing animation -->
+        <com.colt.enigma.preference.SystemSettingSwitchPreference
+            android:key="fod_recognizing_animation"
+            android:title="@string/fod_recog_animation"
+            android:summary="@string/fod_recog_animation_summary"
+            android:defaultValue="false" />
+
         <!-- FOD pressed color -->
     <com.dirtyunicorns.support.preferences.SystemSettingListPreference
             android:key="fod_color"
@@ -71,6 +83,8 @@
             android:title="@string/fod_night_light_title"
             android:summary="@string/fod_night_light_summary"
             android:defaultValue="@*android:bool/disable_fod_night_light"  />
+
+    </PreferenceCategory>
 
     <com.dirtyunicorns.support.preferences.SystemSettingSwitchPreference
         android:key="lockscreen_lock_icon"

@@ -55,6 +55,9 @@ import com.dirtyunicorns.support.preferences.SystemSettingListPreference;
 public class Lockscreen extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
+    private static final String FOD_ICON_PICKER_CATEGORY = "fod_icon_picker";
+
+    private PreferenceCategory mFODIconPickerCategory;
     private static final String FINGERPRINT_VIB = "fingerprint_success_vib";
     private FingerprintManager mFingerprintManager;
     private SwitchPreference mFingerprintVib;
@@ -80,6 +83,11 @@ public class Lockscreen extends SettingsPreferenceFragment implements
             }
         } else {
             prefScreen.removePreference(mFingerprintVib);
+        }
+
+        mFODIconPickerCategory = findPreference(FOD_ICON_PICKER_CATEGORY);
+        if (mFODIconPickerCategory != null && !FodUtils.hasFodSupport(getContext())) {
+            prefScreen.removePreference(mFODIconPickerCategory);
         }
      }
 
