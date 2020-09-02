@@ -389,4 +389,8 @@
     <string name="fod_recog_animation_pureview_halo_ring">Halo ring</string> 
     <string name="fod_recog_animation_pureview_molecular">Molecular</string>
     <string name="fod_recog_animation_op_cyberpunk">CyberPunk</string>
+
+    <string name="qs_bg_use_disco">QS tile disco</string>
+    <string name="qs_bg_use_disco_summary">Make your QS Tiles colorful!</string>
+
 </resources>
