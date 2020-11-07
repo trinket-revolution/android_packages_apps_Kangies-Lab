@@ -1,0 +1,5 @@
+<resources>
+
+        <attr name="allowEditText" format="boolean" />
+
+</resources>
