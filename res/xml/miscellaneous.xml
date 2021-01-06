@@ -55,6 +55,12 @@
         android:summary="@string/headset_connect_player_summary"
         android:defaultValue="false" />
 
+    <com.dirtyunicorns.support.preferences.SecureSettingSwitchPreference
+            android:key="doze_pulse_on_double_tap"
+            android:title="@string/double_tap_on_doze_to_wake_title"
+            android:summary="@string/double_tap_on_doze_to_wake_summary"
+            android:defaultValue="true" />
+
     <Preference
         android:key="gaming_mode"
         android:icon="@drawable/ic_gaming"
