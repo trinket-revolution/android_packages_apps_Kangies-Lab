@@ -28,15 +28,6 @@
         android:summary="@string/quick_settings_vibrate_summary"
         android:defaultValue="false"/>
 
-    <com.dirtyunicorns.support.preferences.SecureSettingListPreference
-        android:key="qs_show_brightness_slider"
-        android:title="@string/qs_show_brightness_slider_title"
-        android:summary="%s"
-        android:dialogTitle="@string/qs_show_brightness_slider_title"
-        android:entries="@array/qs_show_brightness_slider_entries"
-        android:entryValues="@array/qs_show_brightness_slider_values"
-        android:defaultValue="1" />
-
     <!-- QS footer text toggle -->
     <com.dirtyunicorns.support.preferences.SystemSettingSwitchPreference
         android:key="qs_footer_text_show"
@@ -50,12 +41,6 @@
         android:summary="@string/qs_footer_text_string_summary"
         android:dependency="qs_footer_text_show"
         android:defaultValue="KangOS" />
-
-    <com.dirtyunicorns.support.preferences.SecureSettingSwitchPreference
-        android:key="qs_show_auto_brightness"
-        android:title="@string/qs_show_auto_brightness_title"
-        android:summary="@string/qs_show_auto_brightness_summary"
-        android:defaultValue="true" />
 
     <com.dirtyunicorns.support.preferences.SystemSettingSeekBarPreference
         android:key="qs_panel_bg_alpha"
