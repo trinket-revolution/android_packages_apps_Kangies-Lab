@@ -582,4 +582,8 @@
     <string name="network_traffic_location_title">Traffic indicator placement</string>
     <string name="network_traffic_location_summary">Place indicator in either status bar or expanded header</string>
 
+    <!-- QS drag handle -->
+    <string name="qs_show_drag_handle_title">Drag handle</string>
+    <string name="qs_show_drag_handle_summary">Show drag handle below the quick settings panel</string>
+
 </resources>
