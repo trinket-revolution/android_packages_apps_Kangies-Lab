@@ -564,4 +564,7 @@
     <string name="show_ambient_pulse_title">Ambient Pulse</string>
     <string name="show_ambient_pulse_summary">Audio graphic equalizer on the ambient screen</string>
 
+       <!-- Screen off fod -->
+    <string name="fod_gesture_title">Screen off fingerprint</string>
+    <string name="fod_gesture_summary">Allows unlocking the device without having to wake up the screen first</string>
 </resources>

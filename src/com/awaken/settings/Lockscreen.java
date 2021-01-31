@@ -23,6 +23,7 @@ import android.hardware.fingerprint.FingerprintManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.UserHandle;
+import android.content.pm.PackageManager;
 import android.provider.Settings;
 import android.provider.SearchIndexableResource;
 import android.widget.Toast;
