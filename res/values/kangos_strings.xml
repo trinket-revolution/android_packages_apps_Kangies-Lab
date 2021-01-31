@@ -583,4 +583,9 @@
 
     <!-- NavBar Visibility -->
     <string name="navbar_visibility">Enable Navigation Bar</string>
+
+    <!-- Clipboard toast toggle -->
+    <string name="show_clipboard_toast">Show clipboard access alerts</string>
+    <string name="show_clipboard_toast_summary">Display a toast when an app tries to access the clipboard</string>
+
 </resources>
