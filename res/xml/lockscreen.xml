@@ -33,12 +33,6 @@
         android:title="@string/translucent_lockscreen_notifications_bg_title"
         android:defaultValue="false" />
 
-    <com.dirtyunicorns.support.preferences.SystemSettingSwitchPreference
-        android:key="charging_animation"
-        android:title="@string/charging_animation_title"
-        android:summary="@string/charging_animation_summary"
-        android:defaultValue="true" />
-
         <PreferenceCategory
 	            android:key="lockscreen_media_art_options"
 	            android:title="@string/lockscreen_media_art_options_title"
@@ -60,34 +54,6 @@
                 android:defaultValue="25"
                 settings:units="dp"/>
         </PreferenceCategory>
-
-    <Preference
-        android:key="lockscreen_visualizer"
-        android:fragment="com.awaken.settings.Visualizer"
-        android:title="@string/lockscreen_visualizer_enable"
-        android:summary="@string/lockscreen_visualizer_enable_summary" />
-
-    <Preference
-        android:key="fod_icon_picker_category"
-        android:title="@string/fod_icon_picker_title"
-        android:summary="@string/fod_icon_picker_summary"
-        android:fragment="com.awaken.settings.fragments.FODIconPickerFragment" />
-
-    <!-- FOD recognizing animation -->
-    <com.dirtyunicorns.support.preferences.SystemSettingSwitchPreference
-            android:key="fod_recognizing_animation"
-            android:title="@string/fod_recog_animation"
-            android:summary="@string/fod_recog_animation_summary"
-            android:defaultValue="false" />
-
-    <com.dirtyunicorns.support.preferences.SystemSettingListPreference 
-            android:key="fod_recognizing_animation_list" 
-            android:title="@string/fod_recog_animation_effect_title" 
-            android:summary="%s" 
-            android:entries="@array/fod_recognizing_animation_entries" 
-            android:entryValues="@array/fod_recognizing_animation_values" 
-            android:defaultValue="0"
-            android:dependency="fod_recognizing_animation" />
 
         <!-- FOD pressed color -->
     <com.dirtyunicorns.support.preferences.SystemSettingListPreference

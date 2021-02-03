@@ -18,8 +18,6 @@ package com.awaken.settings;
 import android.app.Activity;
 import android.content.ContentResolver;
 import android.content.Context;
-import android.content.pm.PackageManager;
-import android.content.pm.ResolveInfo;
 import android.content.res.Resources;
 import android.hardware.fingerprint.FingerprintManager;
 import android.net.Uri;
@@ -47,8 +45,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import com.awaken.settings.util.CustomContextConstants;
-
 import com.dirtyunicorns.support.preferences.CustomSeekBarPreference;
 import com.dirtyunicorns.support.preferences.SystemSettingEditTextPreference;
 import com.dirtyunicorns.support.preferences.SystemSettingSwitchPreference;
@@ -60,9 +56,7 @@ public class Lockscreen extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
     private static final String FINGERPRINT_VIB = "fingerprint_success_vib";
-    private static final String FOD_ICON_PICKER_CATEGORY = "fod_icon_picker_category";
     private FingerprintManager mFingerprintManager;
-    private Preference mFODIconPicker;
     private SwitchPreference mFingerprintVib;
 
     @Override
@@ -70,15 +64,8 @@ public class Lockscreen extends SettingsPreferenceFragment implements
         super.onCreate(icicle);
         addPreferencesFromResource(R.xml.lockscreen);
         PreferenceScreen prefSet = getPreferenceScreen();
-        PackageManager packageManager = getContext().getPackageManager();
-        boolean hasFod = packageManager.hasSystemFeature(CustomContextConstants.Features.FOD);
         PreferenceScreen prefScreen = getPreferenceScreen();
         final PackageManager mPm = getActivity().getPackageManager();
-
-        mFODIconPicker = (Preference) findPreference(FOD_ICON_PICKER_CATEGORY);
-        if (mFODIconPicker != null && !hasFod) {
-            prefSet.removePreference(mFODIconPicker);
-        }
 
         mFingerprintManager = (FingerprintManager) getActivity().getSystemService(Context.FINGERPRINT_SERVICE);
         mFingerprintVib = (SwitchPreference) findPreference(FINGERPRINT_VIB);
