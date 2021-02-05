@@ -50,8 +50,8 @@ import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-import com.awaken.settings.preference.PackageListAdapter;
-import com.awaken.settings.preference.PackageListAdapter.PackageItem;
+import com.awaken.settings.preferences.PackageListAdapter;
+import com.awaken.settings.preferences.PackageListAdapter.PackageItem;
 
 import java.util.ArrayList;
 import java.util.HashMap;
