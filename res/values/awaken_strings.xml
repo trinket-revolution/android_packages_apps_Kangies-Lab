@@ -78,12 +78,13 @@
     <string name="roaming_indicator_icon_title">Roaming indicator</string>
     <string name="roaming_indicator_icon_summary">Display the roaming indicator in signal icon when in roaming mode</string>
 
-    <!-- Translucent lockscreen notifications background -->
-    <string name="translucent_lockscreen_notifications_bg_title">Translucent notifications background</string>
-
     <!-- Lockscreen battery info indicator  -->
     <string name="lockscreen_battery_info_title">Lockscreen charging info</string>
     <string name="lockscreen_battery_info_summary">Display negociated charger max current and voltage and battery temperature on lockscreen while charging</string>
+
+    <!-- Transparent lockscreen notifications -->
+    <string name="transparent_lockscreen_notification_title">Transparent notifications</string>
+    <string name="transparent_lockscreen_notification_summary">Enable lockscreen notifications with semi-transparent backgrounds</string>
 
     <string name="notification_sound_vib_screen_on_title">Notification sound if active</string>
     <string name="notification_sound_vib_screen_on_summary">Play sound and vibration for notifications when screen is on</string>

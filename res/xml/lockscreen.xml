@@ -28,10 +28,11 @@
         android:summary="@string/double_tap_sleep_gesture_summary"
         android:defaultValue="false" />
 
-    <com.dirtyunicorns.support.preferences.SecureSettingSwitchPreference
-        android:key="lockscreen_translucent_notifications_bg_enabled"
-        android:title="@string/translucent_lockscreen_notifications_bg_title"
-        android:defaultValue="false" />
+        <com.dirtyunicorns.support.preferences.SecureSettingSwitchPreference
+            android:key="lock_screen_transparent_notifications_enabled"
+            android:title="@string/transparent_lockscreen_notification_title"
+            android:summary="@string/transparent_lockscreen_notification_summary"
+            android:defaultValue="false" />
 
         <PreferenceCategory
 	            android:key="lockscreen_media_art_options"
