@@ -29,6 +29,13 @@
 
     </PreferenceCategory>
 
+        <!-- Sensor Block -->
+        <Preference
+            android:key="sensor_block_settings"
+            android:title="@string/sensor_block_title"
+            android:summary="@string/sensor_block_summary"
+            android:fragment="com.awaken.settings.SensorBlockSettings"/>
+
     <com.dirtyunicorns.support.preferences.GlobalSettingSwitchPreference
         android:key="allow_signature_fake"
         android:title="@string/allow_signature_fake"
