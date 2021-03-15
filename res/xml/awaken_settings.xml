@@ -78,13 +78,15 @@
                 android:targetClass="com.custom.ambient.display.DozeSettings" />
         </Preference>
 
-    <!-- Animations -->
-    <Preference
+        <!-- Animations -->
+        <Preference
         android:key="animations_category"
         android:title="@string/animation_title"
         android:summary="@string/animation_summary"
         android:fragment="com.awaken.settings.AnimationSettings"
-        android:icon="@drawable/ic_settings_animations" />
+        android:icon="@drawable/ic_settings_animations"
+        android:layout="@layout/preference_kangossettings_animations" 
+        />
 
         <!-- Miscellaneous -->
         <Preference
@@ -95,12 +97,14 @@
 	    android:layout="@layout/preference_awakensettings_miscellaneous"
 	    />
 
-   <!-- Animations -->
-    <Preference
+        <!-- Pulse -->
+        <Preference
         android:key="pulse"
         android:title="@string/pulse_settings"
         android:summary="@string/pulse_settings_summary"
         android:fragment="com.awaken.settings.PulseSettings"
-        android:icon="@drawable/ic_pulse_image" />
+        android:icon="@drawable/ic_pulse_image" 
+        android:layout="@layout/preference_awakensettings_pulse"
+        />
 
 </PreferenceScreen>
