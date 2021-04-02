@@ -16,6 +16,14 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/button_settings_title" >
 
+    <PreferenceCategory
+        android:key="top_category" >
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="Keys_control"
+        android:title="@string/keys_control_category">
+
     <com.dirtyunicorns.support.preferences.SystemSettingSwitchPreference
         android:key="volume_rocker_wake"
         android:summary="@string/volume_rocker_wake_summary"
@@ -38,7 +46,7 @@
         android:key="lockscreen_power_menu_disabled"
         android:title="@string/lockscreen_power_menu_disabled_title"
         android:summary="@string/lockscreen_power_menu_disabled_summary"
-        android:defaultValue="true" />
+        android:defaultValue="false" />
 
     <com.dirtyunicorns.support.preferences.SystemSettingListPreference
         android:key="volume_key_cursor_control"
@@ -48,11 +56,17 @@
         android:entries="@array/volume_key_cursor_control_entries"
         android:entryValues="@array/volume_key_cursor_control_values"
         android:defaultValue="0" />
+    </PreferenceCategory>
+
+
+    <PreferenceCategory
+        android:key="view_control"
+        android:title="@string/view_control_category">
 
     <com.dirtyunicorns.support.preferences.SystemSettingSwitchPreference
         android:key="volume_panel_on_left"
         android:title="@string/volume_panel_on_left_title"
-        android:defaultValue="false"
+        android:defaultValue="true"
         settings:controller="com.awaken.settings.VolumePanelOnLeftPreferenceController"/>
 
     <SwitchPreference
@@ -77,6 +91,7 @@
         android:title="@string/pixel_navbar_anim_title"
         android:summary="@string/pixel_navbar_anim_summary"
         android:defaultValue="true" />
+    </PreferenceCategory>
 
     <PreferenceCategory
         android:key="hardware_keys"

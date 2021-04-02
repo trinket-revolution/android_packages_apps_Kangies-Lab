@@ -16,6 +16,14 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/notifications_title" >
 
+    <PreferenceCategory
+        android:key="top_category" >
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="cust_category"
+        android:title="@string/cust_category_title">
+
     <!-- Clipboard access toast notification -->
     <com.dirtyunicorns.support.preferences.SystemSettingSwitchPreference
         android:key="show_clipboard_toast"
@@ -40,13 +48,14 @@
         android:title="@string/center_notification_headers_title"
         android:summary="@string/center_notification_headers_summary"
         android:dependency="notification_headers"
-        android:defaultValue="false" />
+        android:defaultValue="true" />
 
     <com.dirtyunicorns.support.preferences.SystemSettingSwitchPreference
         android:key="hide_smart_replies"
         android:title="@string/hide_smart_replies_title"
         android:summary="@string/hide_smart_replies_summary"
         android:defaultValue="false"/>
+    </PreferenceCategory>
 
     <PreferenceCategory
         android:key="pulse_ambient_light_category"
@@ -56,7 +65,7 @@
             android:key="pulse_ambient_light"
             android:title="@string/pulse_ambient_light_title"
             android:summary="@string/pulse_ambient_light_summary"
-            android:defaultValue="false" />
+            android:defaultValue="true" />
 
         <com.dirtyunicorns.support.preferences.SystemSettingSwitchPreference
             android:key="ambient_notification_light_enabled"

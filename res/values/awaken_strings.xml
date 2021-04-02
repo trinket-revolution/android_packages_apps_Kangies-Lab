@@ -80,7 +80,7 @@
 
     <!-- Lockscreen battery info indicator  -->
     <string name="lockscreen_battery_info_title">Lockscreen charging info</string>
-    <string name="lockscreen_battery_info_summary">Display negociated charger max current and voltage and battery temperature on lockscreen while charging</string>
+    <string name="lockscreen_battery_info_summary">Display Charger Max Current, Voltage, Battery Temperature on Lock Screen while charging</string>
 
     <!-- Transparent lockscreen notifications -->
     <string name="transparent_lockscreen_notification_title">Transparent notifications</string>
@@ -190,7 +190,7 @@
 
     <!-- Notification headers -->
     <string name="notification_headers_title">Notification Headers</string>
-    <string name="notification_headers_summary">Show headers in the notification shade\nRequires a SystemUI restart</string>
+    <string name="notification_headers_summary">Show headers in the notification shade (Requires a SystemUI restart)</string>
 
     <!-- Dashboard -->
     <string name="dashboard_conditions_title">Dashboard conditions</string>
@@ -283,5 +283,22 @@
     <!-- Incall Home button behavior-->
     <string name="allow_incall_home_title">Home button when ringing</string>
     <string name="allow_incall_home_summary">Allow to use Home button when device is ringing</string>
+
+    <!-- LockScreen Miscellaneous-->
+    <string name="MiscellaneousLS_category">Miscellaneous</string>
+
+    <!-- StatusBar Category-->
+    <string name="carrier_group_category_title">carrier group</string>
+    <string name="battery_group_category_title">Battery Style</string>
+
+    <!-- StatusBar Category-->
+    <string name="keys_control_category">View Control</string>
+    <string name="view_control_category">Keys Control</string>
+
+    <!-- Misc Category-->
+    <string name="tweaks_category_title">Android tweaks</string>
+
+    <!--Cust. Category-->
+    <string name="cust_category_title">Customizations</string>
 
 </resources>

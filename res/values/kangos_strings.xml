@@ -202,7 +202,7 @@
 
     <!-- Nightlight Fod -->
     <string name="fod_night_light_title">Disable night light when showing FOD</string>
-    <string name="fod_night_light_summary">Disable night light on lockscreen if FOD is active. Disabling this option might affect your fingerprint accuracy with night light on.</string>
+    <string name="fod_night_light_summary">Enabling this option may improve fingerprint accuracy with night light on</string>
 
     <!-- Screenshot gesture delay -->
     <string name="screenshot_category_title">Screenshot</string>
@@ -594,6 +594,9 @@
     <string name="sensor_block_app_picker_title">Block sensors for these apps</string>
     <string name="add_sensor_block_package_title">Add apps for Sensor block</string>
     <string name="add_sensor_block_package_summary">Significant motion, accelerometer, linear acceleration sensors will be blocked for these apps</string>
+
+    <!-- LS Notifications customization options -->
+    <string name="LS_Notifications_category_title">Notification Customizations</string>
 
     <!-- Notification count -->
     <string name="status_bar_notif_count_title">Show notification count</string>

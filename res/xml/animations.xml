@@ -17,6 +17,14 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/animation_title">
 
+    <PreferenceCategory
+        android:key="top_category" >
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="cust_category"
+        android:title="@string/cust_category_title">
+
     <com.dirtyunicorns.support.preferences.GlobalSettingSwitchPreference
         android:key="disable_transition_animations"
         android:title="@string/disable_transition_animations_title"
@@ -38,6 +46,8 @@
         android:summary="@string/pref_scrollingcache_summary"
         android:entries="@array/entries_scrollingcache"
         android:entryValues="@array/values_scrollingcache" />
+    </PreferenceCategory>
+
 
     <PreferenceCategory
         android:title="@string/listview">

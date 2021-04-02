@@ -22,7 +22,7 @@
  <SwitchPreference
         android:key="network_traffic_state"
         android:title="@string/network_traffic_state_title"
-        android:defaultValue="false" />
+        android:defaultValue="true" />
 
     <com.dirtyunicorns.support.preferences.SystemSettingListPreference
         android:key="network_traffic_view_location"
