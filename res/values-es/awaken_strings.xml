@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2020 Project-Awaken
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+
+     Translated by: Fernando Sánchez (TG: @fernandosanch)
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- General -->
+    <string name="ok">Okay</string>
+    <string name="default_string">Por defecto</string>
+    <string name="add">Añadir</string>
+    <string name="enabled">Activado</string>
+    <string name="choose_app">Seleccionar app</string>
+    <string name="help">Ayuda</string>
+    <string name="reset_message">¿Restaurar a los valores por defecto?</string>
+    <string name="attention">Atención</string>
+    <string name="reset">Restaurar</string>
+
+    <!-- Awaken Settings -->
+    <string name="awaken_settings_title">Awaken Settings</string>
+    <string name="statusbar_title">Barra de estado</string>
+    <string name="quicksettings_title">Ajustes rápidos</string>
+    <string name="button_settings_title">Botones</string>
+    <string name="lockscreen_title">Pantalla de bloqueo</string>
+    <string name="notifications_title">Notificaciones</string>
+    <string name="miscellaneous_title">Misceláneo</string>
+    <string name="statusbar_summary">Batería, reloj, íconos de la barra de estado y más</string>
+    <string name="quick_settings_summary">Tinte, Haptic Feedback y más</string>
+    <string name="buttons_summary">Control de reproducción, saltar a la cámara, reinicio avanzado y más</string>
+    <string name="lockscreen_summary">Media art, información de carga, clima y más</string>
+    <string name="notifications_summary">Notificaciones y más</string>
+    <string name="miscellaneous_summary">Condiciones del Dashboard, sugerencias y más</string>
+    <string name="ambient_display_summary">AOD, gestos y más</string>
+    <string name="animation_title">Animaciones</string>
+    <string name="animation_summary">Cambiar los ajustes de animaciones</string>
+
+    <!-- Double Tap gestures -->
+    <string name="double_tap_sleep_lockscreen_title">Doble toque para dormir en la pantalla de bloqueo</string>
+    <string name="double_tap_sleep_lockscreen_summary">Doble toque en cualquier lugar de la pantalla de bloqueo para bloquear el teléfono</string>
+    <string name="double_tap_sleep_gesture_title">Doble toque para dormir en la barra de estado</string>
+    <string name="double_tap_sleep_gesture_summary">Doble toque en la barra de estado para bloquear el teléfono</string>
+
+    <!-- Volume rocker wake -->
+    <string name="volume_rocker_wake_title">Despertar el teléfono</string>
+    <string name="volume_rocker_wake_summary">Presionar las teclas de volumen para despertar</string>
+
+    <!-- Volume rocker music control -->
+    <string name="volume_rocker_music_controls_title">Control de reproducción</string>
+    <string name="volume_rocker_music_controls_summary">Cuando la pantalla está apagada, sostener las teclas de volumen para cambiar las canciones</string>
+
+    <string name="use_old_mobiletype_title">Iconos de tipo móvil antiguos</string>
+    <string name="use_old_mobiletype_summary">Fusionar señal y tipos de iconos como Oreo (Requiere reinicio)</string>
+
+    <!-- QS Tint -->
+    <string name="qs_bg_use_new_tint">Nuevo estilo de tinte</string>
+    <string name="qs_bg_use_new_tint_summary">Activar el nuevo estilo de tinte para los QS (Requiere reinicio)</string>
+
+    <!-- 4G icon -->
+    <string name="show_fourg_icon_title">Icono 4G</string>
+    <string name="show_fourg_icon_summary">Mostrar el ícono 4G en lugar del LTE</string>
+
+    <!-- Data disabled icon -->
+    <string name="data_disabled_icon_title">Icono de datos desactivados</string>
+    <string name="data_disabled_icon_summary">Mostrar una X al lado de la barra de señal cuando los datos están desactivados</string>
+
+    <!-- Roaming indicator icon -->
+    <string name="roaming_indicator_icon_title">Indicador de Roaming</string>
+    <string name="roaming_indicator_icon_summary">Mostrar el indicador de Roaming en el ícono de señal cuando está habilitado</string>
+
+    <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">Información de carga en pantalla de bloqueo</string>
+    <string name="lockscreen_battery_info_summary">Mostrar la corriente y el voltaje máximos del cargador y la temperatura de la batería en la pantalla de bloqueo durante la carga</string>
+
+    <!-- Transparent lockscreen notifications -->
+    <string name="transparent_lockscreen_notification_title">Notificaciones transparentes</string>
+    <string name="transparent_lockscreen_notification_summary">Activar notificaciones en pantalla de bloqueo con fondo semi-transparente</string>
+
+    <string name="notification_sound_vib_screen_on_title">Sonido de notificación con pantalla encendida</string>
+    <string name="notification_sound_vib_screen_on_summary">Reproducir sonido y vibración para las notificaciones cuando la pantalla está encendida</string>
+
+    <!-- Quick settings haptic feedback -->
+    <string name="quick_settings_vibrate_title">Vibrar al tocar</string>
+    <string name="quick_settings_vibrate_summary">Vibrar al tocar los ajustes rápidos</string>
+
+    <string name="ambient_display_custom_title">Ambient Display</string>
+
+    <!-- Battery mode -->
+    <string name="battery_percentage_title">Porcentaje de batería</string>
+    <string name="battery_percentage_off">Desactivado</string>
+    <string name="battery_percentage_next">Activado</string>
+    <string name="battery_percentage_inside">Activado (dentro del ícono)</string>
+    <string name="battery_percentage_estimate">Activado (estimado)</string>
+
+    <!-- Status bar - Battery -->
+    <string name="status_bar_battery_style_title">Estilo de batería</string>
+    <string name="status_bar_battery_style_icon_portrait">Icono vertical</string>
+    <string name="status_bar_battery_style_icon_landscape">Icono horizontal</string>
+    <string name="status_bar_battery_style_circle">Círculo</string>
+    <string name="status_bar_battery_style_dotted_circle">Círculo de puntos</string>
+    <string name="status_bar_battery_style_big_circle">Círculo grande</string>
+    <string name="status_bar_battery_style_big_dotted_circle">Círculo con puntos grande</string>
+    <string name="status_bar_battery_style_square">Cuadrado</string>
+    <string name="status_bar_battery_style_solid">Solido</string>
+    <string name="status_bar_battery_style_text">Texto</string>
+    <string name="status_bar_battery_style_hidden">Oculto</string>
+    <string name="status_bar_battery_style_q">Estilo Q</string>	
+
+    <string name="status_bar_battery_style_tile_title">Override battery tile</string>
+    <string name="status_bar_battery_style_tile_summary">Usar el mismo estilo de ícono que arriba en los ajustes rápidos</string>
+
+    <!-- Status bar - Battery custom charging symbol -->
+    <string name="text_charging_symbol_title">Símbolo de carga personalizado para estilo de texto</string>
+    <string name="text_charging_symbol_dialog">Símbolo de carga personalizado cerca del porcentaje de batería</string>
+    <string name="text_charging_symbol_default">Desactivado</string>
+    <string name="text_charging_symbol_flash">Flash</string>
+    <string name="text_charging_symbol_tilde">Tilde</string>
+
+    <!-- Status bar - Battery percentage -->
+    <string name="status_bar_battery_percentage_title">Porcentaje de batería</string>
+    <string name="status_bar_battery_percentage_default">Oculto</string>
+    <string name="status_bar_battery_percentage_text_inside">Dentro del ícono</string>
+    <string name="status_bar_battery_percentage_text_next">Al lado del ícono</string>
+    <string name="status_bar_battery_text_position_title">Posición del porcentaje</string>
+    <string name="status_bar_battery_text_position_left">A la izquierda del ícono</string>
+    <string name="status_bar_battery_text_position_right">A la derecha del ícono</string>
+    <string name="status_bar_battery_text_charging_title">Porcentaje de batería al cargar</string>
+    <string name="status_bar_battery_text_charging_summary">Siempre mostrar el porcentaje de batería al cargar</string>
+
+    <!-- Lockscreen weather -->
+    <string name="lockscreen_weather_category">Clima</string>
+    <string name="lockscreen_weather_enabled_title">Mostrar en la pantalla de bloqueo</string>
+    <string name="lockscreen_weather_enabled_summary">Mostrar información del clima en la pantalla de bloqueo y en Doze</string>
+    <string name="lockscreen_weather_settings_title">Configurar opciones del clima</string>
+    <string name="lockscreen_weather_settings_summary">Configurar pack de íconos y servicio del clima</string>
+    <string name="weather_config_title">Servicio de clima</string>
+    <string name="weather_config_summary">Ajustes del servicio</string>
+    <string name="weather_title">Vista del clima en el header</string>
+    <string name="header_weather_summary">Activar clima en el header del panel de notificaciones</string>
+    <string name="weather_icon_pack_title">Paquete de íconos</string>
+    <string name="weather_icon_pack_note">Note\u003a Puedes instalar nuevos paquetes de íconos desde la Play Store buscando \"Chronus icons\"</string>
+    <string name="weather_icon_pack_info_title">El paquete de íconos se usa en los ajustes rápidos y la pantalla de bloqueo</string>
+
+    <!-- Lockscreen weather style -->
+    <string name="lockscreen_weather_style_title">Estilos de clima</string>
+    <string name="lockscreen_weather_disable_style_title">Desactivar estilo</string>
+    <string name="lockscreen_weather_enable_style_title">Activar estilo</string>
+
+    <!--SystemUI Tuner -->
+    <string name="statusbar_tuner_title">Iconos de la barra de estado</string>
+    <string name="statusbar_tuner_summary">Seleccione iconos a desactivar</string>
+
+    <string name="system_global_actions_category">Acciones globales</string>
+    
+    <!-- Global Actions -->
+    <string name="powermenu_advanced_reboot_title">Reinicio avanzado</string>
+    <string name="powermenu_advanced_reboot_summary">Activa el acceso al recovery y al bootloader</string>
+
+    <!-- Brightness control -->
+    <string name="status_bar_toggle_brightness">Control de brillo</string>
+    <string name="status_bar_toggle_brightness_summary">Ajustar el brillo arrastrando el dedo por la barra de estado</string>
+
+    <!-- Torch Power button gestures -->
+    <string name="torch_power_button_gesture_title">Encender/Apagar la linterna con la pantalla apagada</string>
+    <string name="torch_power_button_gesture_none">Desactivado</string>
+    <string name="torch_power_button_gesture_dt">Doble toque en botón de apagado (respuesta a toque único más lenta)</string>
+    <string name="torch_power_button_gesture_dt_toast">El gesto para cambiar a la cámara está ahora desactivado</string>
+    <string name="torch_power_button_gesture_lp">Toque largo en botón de apagado</string>
+
+    <!-- Statusbar Clock -->
+    <string name="status_bar_clock_title">Ajustes del reloj</string>
+    <string name="status_bar_clock_pos_title">Posición</string>
+    <string name="status_bar_clock_pos_right">Derecha</string>
+    <string name="status_bar_clock_pos_center">Centro</string>
+    <string name="status_bar_clock_pos_left">Izquierda</string>
+    <string name="status_bar_am_pm_title">Estilo AM/PM</string>
+    <string name="status_bar_am_pm_normal">Normal</string>
+    <string name="status_bar_am_pm_small">Pequeño</string>
+    <string name="status_bar_am_pm_hidden">Oculto (por defecto)</string>
+
+    <!-- Notification headers -->
+    <string name="notification_headers_title">Encabezado de notificaciones</string>
+    <string name="notification_headers_summary">Mostrar encabezados en la cortina de notificaciones\nRequiere un reinicio a la SystemUI</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_conditions_title">Condiciones del Dashboard</string>
+    <string name="summary_dashboard_conditions_enabled">Las condiciones del Dashboard están activadas</string>
+    <string name="summary_dashboard_conditions_disabled">Las condiciones del Dashboard están desactivadas</string>
+    <string name="dashboard_suggestions_title">Sugerencias del Dashboard</string>
+    <string name="summary_dashboard_suggestions_enabled">Las sugerencias del Dashboard están activadas</string>
+    <string name="summary_dashboard_suggestions_disabled">Las sugerencias del Dashboard están desactivadas</string>
+
+    <!-- Power menu on lockscreen -->
+    <string name="lockscreen_power_menu_disabled_title">Desactivar menú de apagado en pantalla de bloqueo</string>
+    <string name="lockscreen_power_menu_disabled_summary">Esto sólo deshabilitará el menú de apagado en pantalla de bloqueo segura</string>
+
+    <!-- Quick Settings -->
+    <string name="lockscreen_qs_disabled_title">Desactivar ajustes rápidos en pantalla de bloqueo</string>
+    <string name="lockscreen_qs_disabled_summary">Evitar que se expandan los ajustes rápidos en pantalla de bloqueo</string>
+
+    <!-- Volume rocker cursor control -->
+    <string name="cursor_section_header">Cursor</string>
+    <string name="volume_key_cursor_control_title">Control del cursor del teclado</string>
+    <string name="volume_key_cursor_control_off">Desactivado</string>
+    <string name="volume_key_cursor_control_on">Volumen arriba/abajo - Cursor izquierda/derecha</string>
+    <string name="volume_key_cursor_control_on_reverse">Volumen arriba/abajo - Cursor derecha/izquierda</string>
+
+    <!-- Volume panel on left switch -->
+    <string name="volume_panel_on_left_title">Mostrar panel de volumen a la izquierda</string>
+
+    <string name="lockscreen_lock_icon_title">Icono de candado</string>
+    <string name="lockscreen_lock_icon_summary">Mostrar ícono de candado en pantalla de bloqueo</string>
+
+    <!--  Volume Panel Plugin   -->
+    <string name="volume_panel">Estilo del panel de volumen</string>
+    <string name="volume_panel_aosp">AOSP</string>
+    <string name="volume_panel_compact">Compacto</string>
+    <string name="volume_panel_oreo">Oreo</string>
+    <string name="volume_panel_tiled">Tiled</string>
+    <string name="volume_panel_miui">MIUI</string>
+
+    <!--  Volume Panel Plugin Values   -->
+    <string name="volume_panel_aosp_val">co.potatoproject.plugin.volume.aosp</string>
+    <string name="volume_panel_compact_val">co.potatoproject.plugin.volume.compact</string>
+    <string name="volume_panel_oreo_val">co.potatoproject.plugin.volume.oreo</string>
+    <string name="volume_panel_tiled_val">co.potatoproject.plugin.volume.tiled</string>
+    <string name="volume_panel_miui_val">com.kangos.plugin.volume.miui</string>
+
+    <!-- Ambient edge lighting -->
+    <string name="pulse_ambient_light_category">Screen edge lighting</string>
+    <string name="pulse_ambient_light_title">Mostrar al recibir notificaciones</string>
+    <string name="pulse_ambient_light_summary">Activar luces a los costados al recibir notificaciones</string>
+    <string name="ambient_notification_light_enabled_title">Mostrar en modo Always on </string>
+    <string name="aod_disabled">AOD está desactivado</string>
+    <string name="ambient_notification_light_enabled_summary">Activar luces al recibir notificaciones al usar Always on</string>
+    <string name="ambient_notification_light_color_title">Color personalizado</string>
+    <string name="ambient_notification_light_color_summary">Color por defecto para las luces</string>
+    <string name="ambient_notification_light_hide_aod_title">Sólo mostrar luces</string>
+    <string name="ambient_notification_light_hide_aod_summary">Esconder todos los demás elementos del Always on</string>
+    <string name="ambient_notification_light_timeout_title">Timeout de las luces</string>
+    <string name="entry_infinite">Infinito</string>
+    <string name="entry_five_minute">5 minutos</string>
+    <string name="entry_ten_minute">10 minutos</string>
+    <string name="entry_thirty_minute">30 minutos</string>
+    <string name="entry_sixty_minute">60 minutos</string>
+    <string name="entry_fifteen_minute">15 minutos</string>
+    <string name="ambient_notification_light_color_mode_title">Color de las luces</string>
+    <string name="ambient_notification_light_color_mode_automatic">Color de la notificación</string>
+    <string name="ambient_notification_light_color_mode_accent">Color de acento del sistema</string>
+    <string name="ambient_notification_light_color_mode_custom">Color personalizado</string>
+    <string name="pulse_ambient_light_duration_title">Duración</string>
+    <string name="pulse_ambient_light_duration_summary">Define la duración de la animación de las luces</string>
+    <string name="pulse_ambient_light_repeat_count_title">Repeticiones del Edge Light</string>
+    <string name="pulse_ambient_light_repeat_count_summary">Define las repeticiones máximas de 0 a infinito</string>
+
+   <!-- QS Header data uasge -->
+   <string name="qs_datausage_title">Uso de datos en el header de los ajustes rápidos</string>
+   <string name="qs_datausage_disabled">Desactivado</string>
+   <string name="qs_datausage_daily">Uso diario</string>
+   <string name="qs_datausage_monthly">Uso mensual</string>
+
+    <!-- Navbar Animation -->
+    <string name="pixel_navbar_anim_title">Animación Pixel</string>
+    <string name="pixel_navbar_anim_summary">Cambiar animación de botón home</string>
+
+    <!-- Navbar options -->
+    <string name="navbar_invert_layout_title">Invertir layout</string>
+
+    <!-- Center R Notification headers -->
+    <string name="center_notification_headers_title">Centrar headers de notificaciones</string>
+    <string name="center_notification_headers_summary">Si centrar el estilo de las notificaciones Android R (Requiere reiniciar la SystemUI)</string>
+
+    <!-- Incall Home button behavior-->
+    <string name="allow_incall_home_title">Botón de home en llamada entrante</string>
+    <string name="allow_incall_home_summary">Permitir que se use el botón de home en llamada entrante</string>
+
+</resources>
